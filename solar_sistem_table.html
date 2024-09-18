@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Sistem Table</title>
+</head>
+<!-- Style to better see the columns/rows of the table -->
+<style>
+    table, th, td, caption {
+        border: 1px, solid black;
+        width: auto;
+    }
+</style>
+<body>
+    <main>
+        <table>
+            <!-- Caption using "<h2>" to make the title more readable -->
+            <caption>
+                <h2>Comparação de Características de Planetas do Sistema Solar</h2>
+            </caption>
+            <!-- Header of the table -->
+            <thead>
+                <tr>
+                    <th>Planeta</th>
+                    <th>Diametro(km)</th>
+                    <th>Massa(kg)</th>
+                    <th>Luas</th>
+                    <th>Temp. Media(°C)</th>
+                    <th>Rotacao(dias)</th>
+                    <th>Orbita(anos)</th>
+                    <th>Atmosfera</th>
+                </tr>
+            </thead>
+            <!-- Body of the table -->
+            <tbody>
+                <tr>
+                    <td>Mercurio</td>
+                    <td>4,879</td>
+                    <td>3.30*10^23</td>
+                    <!-- Both Mercury and Venus have the same amount of moons -->
+                    <td rowspan="2">0</td>
+                    <td>167</td>
+                    <td>58.6</td>
+                    <td>0.24</td>
+                    <td>Minima(exosfera)</td>
+                </tr>
+                <tr>
+                    <td>Venus</td>
+                    <td>12,104</td>
+                    <td>4.87*10^24</td>
+                    <td>464</td>
+                    <td>243</td>
+                    <td>0.62</td>
+                    <td>CO2, N2</td>
+                </tr>
+                <tr>
+                    <td>Terra</td>
+                    <td>12,742</td>
+                    <td>5.97*10^24</td>
+                    <td>Lua</td>
+                    <td>15</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>N2, O2</td>
+                </tr>
+                <tr>
+                    <td>Marte</td>
+                    <td>6,779</td>
+                    <td>6.39*10^23</td>
+                    <td>
+                        <!-- Nested Table -->
+                        <table>
+                            <tr>
+                                <td>Fobos</td>
+                            </tr>
+                            <tr>
+                                <td>Deimos</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>-65</td>
+                    <td>1.03</td>
+                    <td>1.88</td>
+                    <td>CO2, N2, Ar</td>
+                </tr>
+                <tr>
+                    <td>Jupiter</td>
+                    <td>139,820</td>
+                    <td>1.90*10^27</td>
+                    <td>Principais luas
+                        <!-- Nested Table -->
+                        <table>
+                            <tr>
+                                <td>Io</td>
+                            </tr>
+                            <tr>
+                                <td>Europa</td>
+                            </tr>
+                            <tr>
+                                <td>Ganimedes</td>
+                            </tr>
+                            <tr>
+                                <td>Calisto</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>-110</td>
+                    <td>0.41</td>
+                    <td>11.86</td>
+                    <td>H2, He</td>
+                </tr>
+            </tbody>
+            <!-- Footer of the table -->
+            <tfoot>
+                <tr>
+                    <td colspan="8">Dados Baseados em informacoes da NASA, 2023</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>
